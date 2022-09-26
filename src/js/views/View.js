@@ -100,6 +100,7 @@ export default class View {
   </div>
     `;
     this._clear();
+    //why is markup with error
     this._parentElement.insertAdjacentHTML('afterbegin', markup);
   }
 }
