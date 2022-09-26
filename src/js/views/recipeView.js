@@ -2,6 +2,7 @@ import View from './View.js';
 
 // import icons from '../img/icons.svg'; //parcel 1 method
 import icons from 'url:../../img/icons.svg'; //parcel 2 method
+var Fraction = require('fractional').Fraction;
 // import { Fraction } from 'fractional'; //when using import from npm, there isnt a need to direct any path, just state the name of the npm package
 
 class RecipeView extends View {
@@ -135,8 +136,8 @@ class RecipeView extends View {
     <use href="${icons}#icon-check"></use>
   </svg>
   <div class="recipe__quantity">${
-    ing.quantity ? ing.quantity : ''
-    // ing.quantity ? new Fraction(ing.quantity).toString() : ''
+    // ing.quantity ? ing.quantity : ''
+    ing.quantity ? new Fraction(ing.quantity).toString() : ''
   }</div>
   <div class="recipe__description">
     <span class="recipe__unit">${ing.unit}</span>
