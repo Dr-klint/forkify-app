@@ -3,6 +3,7 @@ import View from './View.js';
 // import icons from '../img/icons.svg'; //parcel 1 method
 import icons from 'url:../../img/icons.svg'; //parcel 2 method
 import { Fraction } from 'fractional'; //when using import from npm, there isnt a need to direct any path, just state the name of the npm package
+const Fraction = require('fractional').Fraction;
 
 class RecipeView extends View {
   _parentElement = document.querySelector('.recipe');

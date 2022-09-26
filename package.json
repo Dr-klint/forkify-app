@@ -11,6 +11,7 @@
   "devDependencies": {
     "@parcel/transformer-image": "^2.0.0-rc.0",
     "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "@types/node": "^18.7.22",
     "parcel": "^2.0.0-rc.0"
   },
   "dependencies": {
