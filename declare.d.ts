@@ -1,1 +1,1 @@
-// declare module 'fractional';
+declare module 'fractional';
